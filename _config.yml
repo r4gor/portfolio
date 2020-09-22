@@ -35,11 +35,11 @@ show_aboutme_card: true
 about_me_title: About Me
 # about_me_description: This will be displayed under the title.
 about_me_description: >
-  My name is Raul Agolli and I am an excellent student, highly motivated and hardworking with a great passion for the IT
+  My name is Raul Agolli and I am a student, highly motivated and hardworking with a great passion for the IT
   industry. Innovation has always been something that I strive to achieve. From an early age
   I’ve wanted to pursue a career within the computing industry. Computers have always
   given me a platform to enhance my creativity and increase my general knowledge. In my
-  spare time, I often create programs from scratch or work on projects to deepen my knowledge in various programming languages.
+  spare time, I often create programs from scratch or work on projects to deepen my knowledge.
 # SKILLS SECTION
 # show_skills_card:
 # > setting this to true, will display the Skills section

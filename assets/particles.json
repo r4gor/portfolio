@@ -23,9 +23,9 @@
     },
     "opacity": {
       "value": 0.7,
-      "random": true,
+      "random": false,
       "anim": {
-        "enable": true,
+        "enable": false,
         "speed": 1,
         "opacity_min": 0.3,
         "sync": false
@@ -37,7 +37,7 @@
       "anim": {
         "enable": true,
         "speed": 4,
-        "size_min": 1,
+        "size_min": 5,
         "sync": false
       }
     },
@@ -53,7 +53,7 @@
       "out_mode": "out",
       "bounce": true,
       "attract": {
-        "enable": true,
+        "enable": false,
         "rotateX": 1200,
         "rotateY": 600
       }
