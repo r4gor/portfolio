@@ -4,7 +4,7 @@
 # title: This will be displayed as the website's name in your browser tab.
 title: Raul's Portfolio
 # description: This will be meta HTML tag content. This can be ignored.
-description: Personal website powered by Jekyll
+description: Personal website powered by GithubPages
 # baseurl: The subpath of your site
 # > set this to "", if you renamed the repository to <user>.github.io
 baseurl: ""
@@ -20,7 +20,7 @@ email: github@webraul.com
 # For every social button you want to display, set your username or userid
 # If you do not use one of the following websites, then leave it empty
 # > twitter_username:
-github_username: 1ncredibl3
+github_username: incredible28
 #codepen_username: exampleUser
 #dev_username: exampleUser
 #linkedin_username: exampleUser
@@ -91,7 +91,7 @@ contact_description: >
 # GITHUB-METADATA
 # Set this to your forked repository
 # > e.g. <user>/<user>.github.io
-repository: 1ncredibl3.github.io
+repository: incredible28
 projects:
   # sortby:
   # > set this to pushed, if you want to sort your github repositories by time.
