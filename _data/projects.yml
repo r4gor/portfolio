@@ -20,9 +20,22 @@
     It is the major Italian initiative to identify, attract, recruit, and 
     place the next generation of cybersecurity professionals.
     <br />
-    Thanks to my skills, I was chosen to be part of the team which
+    Thanks to my skills, I was chosen as a member of the team which
     represented The Polytechnic University of Bari in the nationals phase of the challenge
     against other universities in Italy.
   website: https://cyberchallenge.it/
   tags:
     - tag: CyberSecurity
+
+- name: Simple Auctions
+  descr: >
+    Simple Auctions is a web app tool 
+    to create and/or participate to simple 
+    virtual auctions with virtual points in a 
+    simple and innovative way.
+  website: https://simpleauctions.tk/
+  tags:
+    - tag: WebApp
+    - tag: React
+    - tag: WebSockets
+    - tag: Express

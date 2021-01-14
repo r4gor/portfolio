@@ -10,3 +10,6 @@
 
 - name: MySQL
   weight: 3
+
+- name: React
+  weight: 4
