@@ -67,4 +67,16 @@
     </div>
   </a>
   {% endif %}
+
+  {% if site.fiverr_username != null %}
+  <a class="social-link fiverr" aria-label="My Fiverr" target="_blank" rel="noreferrer"
+    href="https://www.fiverr.com/{{site.fiverr_username}}">
+    <div class="social">
+      <svg class="social-svg" viewBox="0 0 48 48">
+        <use x="12" y="12" width="24" height="24" viewBox="0 0 48 48" xlink:href="{{ "/assets/img/brands.svg#fonticons-fi" | prepend: site.baseurl }}"></use>
+      </svg>
+    </div>
+  </a>
+  {% endif %}
+
 </div>

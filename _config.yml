@@ -25,6 +25,7 @@ github_username: incredible28
 #dev_username: exampleUser
 #linkedin_username: exampleUser
 #twitter_username: exampleUser
+fiverr_username: incred1ble
 
 # ABOUT ME SECTION
 # show_aboutme_card:
@@ -35,10 +36,9 @@ show_aboutme_card: true
 about_me_title: About Me
 # about_me_description: This will be displayed under the title.
 about_me_description: >
-  My name is Raul Agolli and I am a student, highly motivated and hardworking with a great passion for the IT
+  My name is Raul and I am a student, highly motivated and hardworking with a great passion for the IT
   industry. Innovation has always been something that I strive to achieve. From an early age
-  I’ve wanted to pursue a career within the computing industry. Computers have always
-  given me a platform to enhance my creativity and increase my general knowledge. In my
+  I’ve wanted to pursue a career within the computing industry. In my
   spare time, I often create programs from scratch or work on projects to deepen my knowledge.
 # SKILLS SECTION
 # show_skills_card:
