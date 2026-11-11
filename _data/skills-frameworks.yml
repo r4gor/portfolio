@@ -4,12 +4,26 @@
 # Example of a framework
 # - name: Framework
 #   weight: 5
-
-- name: Django
-  weight: 2
-
-- name: MySQL
-  weight: 3
-
 - name: React
   weight: 4
+
+- name: React Native
+  weight: 5
+
+- name: Node.js
+  weight: 4
+
+- name: Flutter
+  weight: 4
+
+- name: scikit-learn
+  weight: 4
+
+- name: OpenCV
+  weight: 4
+
+- name: YOLOv8
+  weight: 3
+
+- name: DepthAI
+  weight: 3

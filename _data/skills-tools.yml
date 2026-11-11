@@ -4,21 +4,29 @@
 # Example of a Dev Tool
 # - name: Git
 #   weight: 5
-
 - name: Git
   weight: 5
 
-- name: Bash
-  weight: 2
-
-- name: Chrome DevTools
-  weight: 1
-
-- name: VS Code
-  weight: 2
-
-- name: Heroku
+- name: Docker
   weight: 4
 
-- name: Docker
+- name: Linux
+  weight: 4
+
+- name: PostgreSQL
+  weight: 4
+
+- name: MySQL
+  weight: 3
+
+- name: Firebase
+  weight: 4
+
+- name: MQTT
+  weight: 3
+
+- name: n8n
+  weight: 3
+
+- name: Whisper
   weight: 3

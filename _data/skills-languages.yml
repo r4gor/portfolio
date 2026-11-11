@@ -4,33 +4,20 @@
 # Example of a Language
 # - name: Language
 #   weight: 5
-
-- name: JavaScript
-  weight: 2
-
 - name: Python
   weight: 5
 
-- name: HTML5
-  weight: 2
-
-- name: CSS
-  weight: 1
-
-- name: Java
-  weight: 1
-
-- name: C
-  weight: 3
-
-- name: C++
+- name: JavaScript
   weight: 4
 
-- name: C#
-  weight: 2
+- name: Java
+  weight: 3
 
-- name: PHP
+- name: Dart
   weight: 3
 
 - name: SQL
   weight: 4
+
+- name: PHP
+  weight: 2

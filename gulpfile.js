@@ -1,38 +1,33 @@
-var gulp = require('gulp');
-var browserSync = require('browser-sync');
-var sass = require('gulp-sass');
-var cssnano = require('gulp-cssnano');
-var prefix = require('gulp-autoprefixer');
-var concat = require('gulp-concat');
-var rename = require('gulp-rename');
-var uglify = require('gulp-uglify');
-var cp = require('child_process');
+const gulp = require('gulp');
+const browserSync = require('browser-sync').create();
+const sass = require('gulp-sass')(require('sass'));
+const postcss = require('gulp-postcss');
+const autoprefixer = require('autoprefixer');
+const cssnano = require('cssnano');
+const concat = require('gulp-concat');
+const rename = require('gulp-rename');
+const terser = require('gulp-terser');
+const cp = require('child_process');
 
 /**
  * Compile and minify sass
  */
 function styles() {
   return gulp
-    .src([ '_sass/*.scss' ])
-    .pipe(
-      sass({
-        includePaths: [ 'scss' ],
-        onError: browserSync.notify
-      })
-    )
-    .pipe(prefix([ 'last 3 versions', '> 1%', 'ie 8' ], { cascade: true }))
+    .src(['_sass/*.scss'])
+    .pipe(sass().on('error', sass.logError))
+    .pipe(postcss([autoprefixer(), cssnano()]))
     .pipe(rename('main.min.css'))
-    .pipe(cssnano())
     .pipe(gulp.dest('_site/assets/css/'))
-    .pipe(browserSync.reload({ stream: true }))
+    .pipe(browserSync.stream())
     .pipe(gulp.dest('assets/css'));
 }
 
 function stylesVendors() {
   return gulp
-    .src([ '_sass/vendors/*.css' ])
+    .src(['_sass/vendors/*.css'])
     .pipe(concat('vendors.min.css'))
-    .pipe(cssnano())
+    .pipe(postcss([cssnano()]))
     .pipe(gulp.dest('_site/assets/css/'))
     .pipe(gulp.dest('assets/css'));
 }
@@ -42,19 +37,19 @@ function stylesVendors() {
  */
 function scripts() {
   return gulp
-    .src([ '_js/app.js' ])
+    .src(['_js/app.js'])
     .pipe(rename('app.min.js'))
-    .pipe(uglify())
+    .pipe(terser())
     .pipe(gulp.dest('_site/assets/js'))
-    .pipe(browserSync.reload({ stream: true }))
+    .pipe(browserSync.stream())
     .pipe(gulp.dest('assets/js'));
 }
 
 function scriptsVendors() {
   return gulp
-    .src([ '_js/vendors/*.js' ])
+    .src(['_js/vendors/*.js'])
     .pipe(concat('vendors.min.js'))
-    .pipe(uglify())
+    .pipe(terser())
     .pipe(gulp.dest('_site/assets/js'))
     .pipe(gulp.dest('assets/js'));
 }
@@ -102,36 +97,33 @@ function jekyll(done) {
  */
 function watchData() {
   gulp.watch(
-    [ '_data/*.yml', '_config.yml', 'assets/*.json' ],
+    ['_data/*.yml', '_config.yml', 'assets/*.json'],
     gulp.series(jekyll, browserSyncReload)
   );
 }
 
 function watchMarkup() {
   gulp.watch(
-    [ 'index.html', '_includes/*.html', '_layouts/*.html' ],
+    ['index.html', '_includes/*.html', '_layouts/*.html'],
     gulp.series(jekyll, browserSyncReload)
   );
 }
 
 function watchScripts() {
-  gulp.watch([ '_js/*.js' ], scripts);
+  gulp.watch(['_js/*.js'], scripts);
 }
 
 function watchStyles() {
-  gulp.watch([ '_sass/*.scss' ], styles);
+  gulp.watch(['_sass/*.scss'], styles);
 }
 
-function watch() {
-  gulp.parallel(watchData, watchMarkup, watchScripts, watchStyles);
-}
-
-var compile = gulp.parallel(styles, stylesVendors, scripts, scriptsVendors);
-var serve = gulp.series(compile, jekyll, browserSyncServe);
-var watch = gulp.parallel(watchData, watchMarkup, watchScripts, watchStyles);
+const compile = gulp.parallel(styles, stylesVendors, scripts, scriptsVendors);
+const serve = gulp.series(compile, jekyll, browserSyncServe);
+const watch = gulp.parallel(watchData, watchMarkup, watchScripts, watchStyles);
 
 /**
- * Default task, running just `gulp` will compile the sass,
- * compile the Jekyll site, launch BrowserSync & watch files.
+ * `gulp build` compiles the assets that get committed to assets/.
+ * Running just `gulp` also builds Jekyll, launches BrowserSync & watches files.
  */
-gulp.task('default', gulp.parallel(serve, watch));
+exports.build = compile;
+exports.default = gulp.parallel(serve, watch);
