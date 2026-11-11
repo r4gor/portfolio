@@ -12,30 +12,56 @@
 #     - tag: Express
 #     - tag: AngularJS
 #     - tag: Node
-
-- name: CyberChallenge
+- name: FORMA
   descr: >
-    CyberChallenge.IT is an educational program 
-    for young students between 16 and 23 years old. 
-    It is the major Italian initiative to identify, attract, recruit, and 
-    place the next generation of cybersecurity professionals.
-    <br />
-    Thanks to my skills, I was chosen as a member of the team which
-    represented The Polytechnic University of Bari in the nationals phase of the challenge
-    against other universities in Italy.
+    <strong>1st place at the GDG AI Hack (GDG PoliMi × Luxonis)</strong>, among 160 participants.
+    A sensor-free squat coach: YOLOv8-pose runs on-device on a Luxonis OAK-4D depth camera to get
+    3D skeletons at 24 fps and measure hip depth in real-world centimetres. A random-forest classifier
+    grades each rep (good, shallow, forward lean) and streams the verdict to an ESP32 display over MQTT.
+  tags:
+    - tag: Python
+    - tag: DepthAI
+    - tag: YOLOv8-pose
+    - tag: scikit-learn
+    - tag: OpenCV
+    - tag: MQTT
+
+- name: Voice-to-Calendar Assistant
+  descr: >
+    A Telegram bot that transcribes voice notes with a self-hosted Whisper container, extracts events
+    through an LLM and replies with ready-to-add Google Calendar links. Runs on my own VPS and resolves
+    models at runtime so it survives upstream model deprecations.
+  tags:
+    - tag: Whisper
+    - tag: LLM APIs
+    - tag: n8n
+    - tag: Docker
+    - tag: PostgreSQL
+    - tag: Caddy
+
+- name: CapyMOA
+  descr: >
+    Ported a bagging regressor to CapyMOA, a library for machine learning on data streams.
+    Started as a course project, now being prepared as an upstream contribution.
+  website: https://capymoa.org/
+  tags:
+    - tag: Python
+    - tag: Stream ML
+    - tag: Open source
+
+- name: DivAid
+  descr: >
+    An expense-splitting mobile app built in a team of three for the Design and Implementation
+    of Mobile Applications course, on a brief set by Bending Spoons.
+  tags:
+    - tag: Flutter
+    - tag: Firebase
+
+- name: CyberChallenge.IT
+  descr: >
+    Selected while still in high school for the national phase on the Politecnico di Bari team (2020).
+    Trained and competed in CTFs covering ethical hacking and network security.
   website: https://cyberchallenge.it/
   tags:
-    - tag: CyberSecurity
-
-- name: Simple Auctions
-  descr: >
-    Simple Auctions is a web app tool 
-    to create and/or participate to simple 
-    virtual auctions with virtual points in a 
-    simple and innovative way.
-  website: https://simpleauctions.tk/
-  tags:
-    - tag: WebApp
-    - tag: React
-    - tag: WebSockets
-    - tag: Express
+    - tag: Cybersecurity
+    - tag: CTF

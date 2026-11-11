@@ -16,39 +16,52 @@
 #     - tag: Ruby
 #     - tag: Rails
 #   timeline-side: right
+- title: Politecnico di Milano
+  title-url: https://www.polimi.it/
+  date: 2025 - 2027 (expected)
+  subtitle: MSc in Computer Science and Engineering
+  tags:
+    - tag: Computer Security
+    - tag: Computer Architectures
+    - tag: Computing Infrastructures
+    - tag: IoT
+  timeline-side: right
+
+- title: Freelance
+  date: 2022 - Apr 2025
+  subtitle: Full-Stack Engineer, delivered web and mobile projects end to end for around 12 clients
+  tags:
+    - tag: React
+    - tag: Node.js
+    - tag: React Native
+    - tag: Flutter
+    - tag: PostgreSQL
+    - tag: Firebase
+  timeline-side: left
+
+- title: Keet
+  title-url: https://keet.ai/
+  date: Jul 2022 - Sep 2022
+  subtitle: Frontend Developer Intern, built the entire mobile frontend with the CTO
+  tags:
+    - tag: React Native
+    - tag: State management
+  timeline-side: right
 
 - title: Politecnico di Milano
-  date: 2021 - Present
-  subtitle: Computer engineering
-  timeline-side: right
-
-- title: Decandia
-  date: 2020-2021
-  subtitle: Junior Fullstack Developer
-  tags:
-    - tag: PHP
-    - tag: Javascript
-    - tag: jQuery
-    - tag: Apache
-    - tag: HTML/CSS
-    - tag: Docker
-    - tag: Prestashop
+  title-url: https://www.polimi.it/
+  date: 2021 - 2025
+  subtitle: BSc in Computer Engineering
   timeline-side: left
 
-- title: Tapecode
-  date: 2019 - 2020
-  subtitle: Junior Fullstack Developer
+- title: KTG srl
+  date: Mar 2021 - Aug 2021
+  subtitle: Full-Stack Developer Intern, built the middleware behind a car-parts e-commerce store
   tags:
     - tag: PHP
-    - tag: Javascript
-    - tag: jQuery
-    - tag: Apache
-    - tag: HTML/CSS
-    - tag: Bootstrap
+    - tag: Symfony
+    - tag: PrestaShop
+    - tag: MySQL
     - tag: Docker
+    - tag: Nginx
   timeline-side: right
-
-- title: High School
-  date: 2016 - 2021
-  subtitle: Informatics and Telecommunications
-  timeline-side: left

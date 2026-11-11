@@ -2,8 +2,8 @@ setTimeout(function() {
   fadeOutPreloader(document.getElementById('preloader'), 69);
 }, 1500);
 
-$(document).ready(function() {
-  $(window).on('beforeunload', function() {
+document.addEventListener('DOMContentLoaded', function() {
+  window.addEventListener('beforeunload', function() {
     window.scrollTo(0, 0);
   });
 
