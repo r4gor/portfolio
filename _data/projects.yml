@@ -68,11 +68,45 @@
 
 - name: DivAid
   descr: >
-    An expense-splitting mobile app built in a team of three for the Design and Implementation
-    of Mobile Applications course, on a brief set by Bending Spoons.
+    An expense-splitting mobile app with group wallets, built in a team of three for the Design and
+    Implementation of Mobile Applications course, on a brief set by Bending Spoons. I worked on Stripe
+    top-ups, an idempotent wallet history, withdrawals through Cloud Functions, and group invites
+    with in-app notifications.
   tags:
     - tag: Flutter
     - tag: Firebase
+    - tag: Cloud Functions
+    - tag: Stripe
+
+- name: StickTheLanding
+  descr: >
+    A 12-hour hackathon by Project Europe and SkyEU (Milan, 2026): an autonomous drone that lands on
+    a moving boat using only a downward camera and an ArUco marker on the deck. I wrote the Kalman
+    filters that estimate the boat's position and motion from the marker detections.
+  tags:
+    - tag: Python
+    - tag: Kalman filters
+    - tag: OpenCV
+    - tag: Robotics
+
+- name: Vinci
+  descr: >
+    A work-in-progress RAG assistant for PoliMi students with GDG PoliMi. I'm designing the data
+    pipeline: scraping the university's public sites, pairing Italian and English pages, and
+    scheduled re-crawls.
+  tags:
+    - tag: Python
+    - tag: Web scraping
+    - tag: RAG
+
+- name: Live Auction App
+  descr: >
+    One of my first full-stack projects (2020): a real-time player auction for fantasy leagues,
+    with rooms, budgets and live bidding over Socket.IO.
+  tags:
+    - tag: React
+    - tag: Express
+    - tag: Socket.IO
 
 - name: CyberChallenge.IT
   descr: >
