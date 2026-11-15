@@ -39,8 +39,9 @@ about_me_description: >
   I'm Raul, an MSc student in Computer Science and Engineering at Politecnico di Milano, based in Milan.
   I like building things that work end to end: from on-device computer vision on depth cameras
   to self-hosted AI assistants and production web and mobile apps. Before my master's I spent three years
-  freelancing as a full-stack engineer for around 12 clients, mostly early-stage startups, while studying full time.
-  Most recently my team won 1st place at the GDG AI Hack (GDG PoliMi × Luxonis).
+  freelancing as a full-stack engineer for 12 larger clients, mostly early-stage startups, and 50+ smaller ones, while studying full time.
+  Recently I was lucky to win 1st place at Reply Student Clash 2026 and at the GDG AI Hack (GDG PoliMi × Luxonis)
+  with two great teams, and my first contribution to the open-source CapyMOA library was merged.
 # SKILLS SECTION
 # show_skills_card:
 # > setting this to true, will display the Skills section

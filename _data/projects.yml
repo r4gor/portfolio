@@ -12,6 +12,23 @@
 #     - tag: Express
 #     - tag: AngularJS
 #     - tag: Node
+- name: Pythagoras
+  descr: >
+    <strong>1st place at Reply Student Clash 2026</strong>, with team Pre Cooked.
+    An AI oral assessment tool for project-based courses: a team has a ~10-minute spoken conversation
+    about its own deliverable, the interview climbs Bloom's levels on three topics, and the professor
+    gets a report with verbatim quotes to start the oral exam from. It never assigns the grade.
+    I worked on the interview rules, the local voice pipeline (Whisper and Kokoro), the report and its
+    quote checks, and the backend and tests, and I presented the project to all participants.
+  website: https://github.com/r4gor/StudentClash-PreCooked
+  tags:
+    - tag: Python
+    - tag: FastAPI
+    - tag: LLM APIs
+    - tag: Whisper
+    - tag: Kokoro TTS
+    - tag: SQLite
+
 - name: FORMA
   descr: >
     <strong>1st place at the GDG AI Hack (GDG PoliMi × Luxonis)</strong>, among 160 participants.
@@ -41,9 +58,9 @@
 
 - name: CapyMOA
   descr: >
-    Ported a bagging regressor to CapyMOA, a library for machine learning on data streams.
-    Started as a course project, now being prepared as an upstream contribution.
-  website: https://capymoa.org/
+    Contributed an online bagging regressor to CapyMOA, a library for machine learning on data streams.
+    It started as a course project and was merged upstream in November 2026.
+  website: https://github.com/adaptive-machine-learning/CapyMOA/pull/479
   tags:
     - tag: Python
     - tag: Stream ML
