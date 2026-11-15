@@ -103,6 +103,7 @@
   descr: >
     One of my first full-stack projects (2020): a real-time player auction for fantasy leagues,
     with rooms, budgets and live bidding over Socket.IO.
+  website: https://github.com/r4gor/auctions
   tags:
     - tag: React
     - tag: Express
