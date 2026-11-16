@@ -66,6 +66,19 @@
     - tag: Stream ML
     - tag: Open source
 
+- name: AN2DL Deep Learning Challenges
+  descr: >
+    Two team challenges for the Artificial Neural Networks and Deep Learning course. Pain-level detection
+    from kinematic time series with a 1D-CNN, LSTM and self-attention model tuned with Optuna (weighted F1 0.92),
+    and breast-cancer subtyping from low-resolution slide images using pathology foundation models (UNI)
+    with CatBoost on the embeddings.
+  website: https://github.com/r4gor/ANN2DL-Polimi
+  tags:
+    - tag: PyTorch
+    - tag: Keras
+    - tag: Optuna
+    - tag: CatBoost
+
 - name: DivAid
   descr: >
     An expense-splitting mobile app with group wallets, built in a team of three for the Design and
@@ -98,6 +111,38 @@
     - tag: Python
     - tag: Web scraping
     - tag: RAG
+
+- name: IoT Challenges
+  descr: >
+    Four challenges for the Internet of Things course, mostly with a teammate: an energy and battery-life model
+    for an ESP32 node, CoAP and MQTT analysis of real captures, a Node-RED pipeline for ZigBee traffic with
+    ThingSpeak, and sizing for LoRaWAN, IEEE 802.15.4, BLE and RFID networks.
+  website: https://github.com/r4gor/IoT-Polimi
+  tags:
+    - tag: ESP32
+    - tag: MQTT
+    - tag: CoAP
+    - tag: Node-RED
+    - tag: LoRaWAN
+
+- name: ML for WCET Estimation
+  descr: >
+    Desk research for the Embedded Systems course on using machine learning to estimate worst-case execution
+    time, from classical static analysis to learned and probabilistic approaches.
+  website: https://github.com/r4gor/WCET-ML-Survey
+  tags:
+    - tag: Embedded systems
+    - tag: Real-time
+    - tag: Research
+
+- name: EV Highway Route Planner
+  descr: >
+    Final project for Algorithms and Data Structures (30 cum laude): fewest-stops route planning between
+    EV rental stations, in C with an AVL tree and a priority queue.
+  website: https://github.com/r4gor/EV-Highway-Route-Planner
+  tags:
+    - tag: C
+    - tag: Algorithms
 
 - name: Live Auction App
   descr: >
